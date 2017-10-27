@@ -60,13 +60,11 @@
 		<artifactId>zap-maven-plugin</artifactId>
 		<version>1.2.1-0</version>
 		<configuration>
-			<zapPort>8080</zapPort>
-			<targetUrl>http://34.251.50.161:8888/petclinic</targetUrl>
-		</configuration>
 			<zapPort>8443</zapPort>
 			<zapHost>34.251.50.161</zapHost>
 			<targetUrl>http://34.251.50.161:8888/petclinic</targetUrl>
 			<shouldRunWithDocker>true</shouldRunWithDocker>
+		</configuration>
 		<executions>
 			<execution>
 				<id>start-zap</id>
