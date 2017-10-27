@@ -58,7 +58,7 @@
 		<plugin>
 		<groupId>br.com.softplan.security.zap</groupId>
 		<artifactId>zap-maven-plugin</artifactId>
-		<version>${zap-maven-plugin.version}</version>
+		<version>2.6.0</version>
 		<configuration>
 			<zapPort>8080</zapPort>
 			<targetUrl>http://34.251.50.161:8888/petclinic</targetUrl>
