@@ -58,12 +58,12 @@
 		<plugin>
 		<groupId>br.com.softplan.security.zap</groupId>
 		<artifactId>zap-maven-plugin</artifactId>
-		<version>1.2.1-0</version>
+		<version>1.0.1-0</version>
 		<configuration>
 			<zapPort>8443</zapPort>
 			<zapHost>34.251.50.161</zapHost>
 			<targetUrl>http://34.251.50.161:8888/petclinic</targetUrl>
-			<initializationTimeoutInMillis>300000</initializationTimeoutInMillis>
+			
 			<shouldRunWithDocker>true</shouldRunWithDocker>
 		</configuration>
 		<executions>
