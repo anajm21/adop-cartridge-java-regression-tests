@@ -63,6 +63,7 @@
 			<zapPort>8443</zapPort>
 			<zapHost>34.251.50.161</zapHost>
 			<targetUrl>http://34.251.50.161:8888/petclinic</targetUrl>
+			<initializationTimeoutInMillis>300000</initializationTimeoutInMillis>
 			<shouldRunWithDocker>true</shouldRunWithDocker>
 		</configuration>
 		<executions>
