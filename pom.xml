@@ -58,20 +58,24 @@
 		<plugin>
 		<groupId>br.com.softplan.security.zap</groupId>
 		<artifactId>zap-maven-plugin</artifactId>
-		<version>2.6.0</version>
+		<version>1.2.1-0</version>
 		<configuration>
 			<zapPort>8080</zapPort>
 			<targetUrl>http://34.251.50.161:8888/petclinic</targetUrl>
 		</configuration>
+			<zapPort>8443</zapPort>
+			<zapHost>34.251.50.161</zapPort>
+			<targetUrl>http://34.251.50.161:8888/petclinic</targetUrl>
+			<shouldRunWithDocker>true</shouldRunWithDocker>
 		<executions>
 			<execution>
 				<id>start-zap</id>
-				<phase>pre-integration-test</phase>
+				<phase>test-compile</phase>
 				<goals><goal>startZap</goal></goals>
 			</execution>
 			<execution>
 				<id>selenium-analyze</id>
-				<phase>post-integration-test</phase>
+				<phase>prepare-package</phase>
 				<goals><goal>seleniumAnalyze</goal></goals>
 			</execution>
 		</executions>
