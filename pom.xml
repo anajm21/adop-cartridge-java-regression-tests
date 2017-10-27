@@ -54,7 +54,6 @@
             <directory>src/main/resources</directory>
         </resource>
     </resources>
-	</build>
 	<plugins>
 		<plugin>
 		<groupId>br.com.softplan.security.zap</groupId>
@@ -65,18 +64,20 @@
 			<targetUrl>http://34.251.50.161:8888/petclinic</targetUrl>
 		</configuration>
 		<executions>
-		<execution>
-			<id>start-zap</id>
-			<phase>pre-integration-test</phase>
-			<goals><goal>startZap</goal></goals>
-		</execution>
-		<execution>
-			<id>selenium-analyze</id>
-			<phase>post-integration-test</phase>
-			<goals><goal>seleniumAnalyze</goal></goals>
-		</execution>
-	</executions>
+			<execution>
+				<id>start-zap</id>
+				<phase>pre-integration-test</phase>
+				<goals><goal>startZap</goal></goals>
+			</execution>
+			<execution>
+				<id>selenium-analyze</id>
+				<phase>post-integration-test</phase>
+				<goals><goal>seleniumAnalyze</goal></goals>
+			</execution>
+		</executions>
 		</plugin>
-	</plugins>	
+	</plugins>
+	</build>
+	
 
 </project>
