@@ -54,5 +54,19 @@
             <directory>src/main/resources</directory>
         </resource>
     </resources>
- </build>
+	</build>
+	<plugin>
+    <groupId>br.com.softplan.security.zap</groupId>
+    <artifactId>zap-maven-plugin</artifactId>
+    <version>${zap-maven-plugin.version}</version>
+    <configuration>
+        <!-- Configuration parameters -->
+    </configuration>
+    <executions>
+        <execution>
+            <phase>verify</phase>
+            <goals><goal>analyze</goal></goals>
+        </execution>
+    </executions>
+</plugin>
 </project>
